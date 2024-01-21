@@ -1,0 +1,21 @@
+{
+	"rootDir": ".",
+	"roots": ["<rootDir>/tests/unit", "<rootDir>/features", "<rootDir>/utils"],
+	"preset": "ts-jest/presets/default-esm",
+	"testEnvironment": "node",
+	"setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+	"moduleDirectories": ["node_modules"],
+	"moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+	"modulePaths": ["<rootDir>"],
+	"transform": {
+		"^.+\\.tsx?$": [
+			"ts-jest",
+			{
+				"tsconfig": "./tsconfig.test.json",
+				"useESM": true
+			}
+		]
+	},
+	"clearMocks": true,
+	"testMatch": ["**/*test.[jt]s?(x)"]
+}
