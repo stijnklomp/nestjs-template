@@ -29,10 +29,6 @@ module.exports = {
 			"error",
 			"never",
 			{ beforeStatementContinuationChars: "always" }
-		],
-		"@stylistic/no-multiple-empty-lines": [
-			"error",
-			{ max: 1, maxBOF: 0, maxEOF: 0 }
 		]
 	}
 }
